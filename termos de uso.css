@@ -1,0 +1,247 @@
+/* Reset básico para garantir consistência no estilo de elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo global do corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Links sem sublinhado e herdando a cor atual do texto */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remover estilo padrão das listas */
+ul {
+  list-style: none;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #004f9e; /* Fundo azul-escuro */
+  padding: 15px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between; /* Espaço entre os itens */
+  align-items: center; /* Centralizar verticalmente */
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header nav ul {
+  display: flex; /* Itens em linha */
+  gap: 15px; /* Espaço entre os itens */
+}
+
+header nav ul li a {
+  color: #fff; /* Cor do texto branco */
+  font-weight: bold;
+  padding: 5px 10px; /* Espaçamento interno */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+header nav ul li a:hover {
+  background-color: #0264d6; /* Cor de fundo ao passar o mouse */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Título principal da página */
+main h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2.5em;
+  color: #004f9e; /* Azul-escuro */
+}
+
+/* Conteúdo principal */
+.content {
+  padding: 40px 0;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  margin: 20px 0;
+}
+
+/* Títulos de seções */
+h2 {
+  font-size: 22px;
+  color: #00336d; /* Azul-escuro */
+  border-bottom: 2px solid #f7d200; /* Linha inferior amarela */
+  padding-bottom: 5px; /* Espaçamento inferior */
+}
+
+.content h2 {
+  font-size: 24px;
+  color: black;
+  margin-top: 30px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6; /* Altura da linha */
+}
+
+/* Listas dentro do conteúdo */
+.content ul {
+  padding-left: 20px;
+  list-style-type: disc; /* Lista com marcadores */
+}
+
+.content a {
+  color: black;
+  text-decoration: none; /* Sem sublinhado */
+}
+
+.content a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #004f9e; /* Fundo azul-escuro */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .content h2 {
+    font-size: 20px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+}
+
+/* Estilos de formulário */
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+form button {
+  background-color: #00336d; /* Azul-escuro */
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056a8; /* Azul mais claro ao passar o mouse */
+}
+
+/* Links com cores e decoração */
+a {
+  color: #00336d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+  color: #0056a8; /* Azul mais claro ao passar o mouse */
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li::before {
+  content: "✔"; /* Marcador de check */
+  color: #f7d200; /* Amarelo */
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Botão de download */
+.botao-download {
+  display: inline-block;
+  background-color: #00336d;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.botao-download:hover {
+  background-color: #0056a8; /* Azul mais claro ao passar o mouse */
+}
+
+/* Botão para voltar ao topo */
+#voltar-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00336d;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Inicialmente escondido */
+  z-index: 1000;
+}
+
+#voltar-topo:hover {
+  background-color: #0056a8; /* Azul mais claro ao passar o mouse */
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a Senha - Sua Loja</title>
+    <link rel="stylesheet" href="esqueceusenha.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body>
+
+    <!-- Container de Esqueceu a Senha -->
+    <div class="forgot-password-container">
+        <h2>Esqueceu a Senha</h2>
+        <p>Insira seu e-mail para receber um link de redefinição de senha.</p>
+        
+        <!-- Formulário de Esqueceu a Senha -->
+        <form action="esqueceu-senha-processar.php" method="POST" class="forgot-password-form">
+            <!-- Grupo de Input para E-mail -->
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+            </div>
+            
+            <!-- Botão Enviar -->
+            <button type="submit" class="btn-submit">Enviar</button>
+        </form>
+
+        <!-- Link para Login -->
+        <p><a href="login.html">Voltar ao Login</a></p>
+    </div>
+
+</body>
+</html>

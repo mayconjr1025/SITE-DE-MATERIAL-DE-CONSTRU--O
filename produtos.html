@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos de Material de Construção</title>
+    <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <a href="paginainicial.html">
+                    <img src="imagem logo/b77e52a4-fa70-42aa-bbb6-42454f88236d.jpg" alt="Logo">
+                </a>
+            </h1>
+            <!-- Navegação -->
+            <nav>
+                <ul>
+                    <li><a href="paginainicial.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de filtros -->
+    <section class="filters">
+        <h2>Filtrar Produtos</h2>
+        <form>
+            <label for="categoria">Categoria:</label>
+            <select id="categoria">
+                <option value="todas">Todas</option>
+                <option value="ferramentas">Ferramentas</option>
+                <option value="tintas">Tintas</option>
+                <option value="revestimentos">Revestimentos</option>
+            </select>
+
+            <label for="preco">Faixa de Preço:</label>
+            <select id="preco">
+                <option value="todas">Todas</option>
+                <option value="baixo">Até R$50</option>
+                <option value="medio">R$51 - R$100</option>
+                <option value="alto">Acima de R$100</option>
+            </select>
+
+            <button type="submit" class="btn-filtrar">Filtrar</button>
+        </form>
+    </section>
+
+    <!-- Barra de busca -->
+    <section class="search-bar">
+        <input type="text" placeholder="Busque por produtos..." id="search-input">
+        <button type="button" class="btn-search">Buscar</button>
+    </section>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h1>Produtos de Construção</h1>
+        <div class="products-container">
+            <!-- Cartões de produtos -->
+            <div class="product-card" data-category="ferramentas">
+                <img src="imagem adicionais/009c32d9-35e7-467c-9a8e-c5ab7416895d.jpg" alt="Trena">
+                <p>Trena</p>
+                <p class="price">R$ 20,00</p>
+                <a href="trena.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+            
+            <div class="product-card" data-category="revestimentos">
+                <img src="imagem novas/059c28fd-9d41-4fa2-991c-1c736f69ced5.jpg" alt="Assento Sanitário">
+                <p>Assento Sanitário</p>
+                <p class="price">R$ 10,00</p>
+                <a href="detalhes.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+
+            <div class="product-card" data-category="tintas">
+                <img src="imagem novas/1a8e9fc9-1458-4048-ad18-b854bfe2e257.jpg" alt="Tinta de Revestimento">
+                <p>Tinta de Revestimento</p>
+                <p class="price">R$ 50,00</p>
+                <a href="detalhes.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+            
+            <div class="product-card" data-category="ferramenta">
+                <img src="imagem adicionais/431549ff-0c4f-42a7-a37f-02e32f705a9e.jpg" alt="Mangueira">
+                <p>Mangueira</p>
+                <p class="price">R$ 25,00</p>
+                <a href="detalhes.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+            
+            <div class="product-card" data-category="tintas">
+                <img src="imagem adicionais/45e9cc2b-61e2-4212-b805-27d188ab68b7.jpg" alt="Tinta Emborrachada">
+                <p>Tinta Emborrachada</p>
+                <p class="price">R$ 50,00</p>
+                <a href="detalhes.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+            
+            <div class="product-card" data-category="tintas">
+                <img src="imagem adicionais/75bd0e69-4c8f-444f-b5e1-beba3847a73b.jpg" alt="Tinta Super Resistente">
+                <p>Tinta Super Resistente</p>
+                <p class="price">R$ 50,00</p>
+                <a href="detalhes.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+            
+            <div class="product-card" data-category="ferramenta">
+                <img src="imagem adicionais/7d4520a3-725d-4a5a-b55d-026f7c176666.jpg" alt="Cano PVC">
+                <p>Cano PVC</p>
+                <p class="price">R$ 50,00</p>
+                <a href="detalhes.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+            
+            <div class="product-card" data-category="ferramenta">
+                <img src="imagem adicionais/8ca339c5-7189-4e25-af66-17bdc14ebd18.jpg" alt="Lâmpada">
+                <p>Lâmpada</p>
+                <p class="price">R$ 50,00</p>
+                <a href="detalhes.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+            
+            <div class="product-card" data-category="ferramenta">
+                <img src="imagem adicionais/8f97e88f-452f-4213-9306-9462a1da02d6.jpg" alt="Bomba de Água">
+                <p>Bomba de Água</p>
+                <p class="price">R$ 250,00</p>
+                <a href="detalhes.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+            
+            <div class="product-card" data-category="ferramenta">
+                <img src="imagem adicionais/ab9ab449-cd43-49be-8df6-10b6b3cdc757.jpg" alt="Máscara">
+                <p>Máscara</p>
+                <p class="price">R$ 50,00</p>
+                <a href="detalhes.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+            
+            <div class="product-card" data-category="ferramenta">
+                <img src="imagem adicionais/ac0dcd73-2356-425c-b783-b2f61ad67783.jpg" alt="Caixa d'Água">
+                <p>Caixa d'Água</p>
+                <p class="price">R$ 100,00</p>
+                <a href="detalhes.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+            
+            <div class="product-card" data-category="ferramenta">
+                <img src="imagem adicionais/c3d52984-6a7c-4e2d-8ffa-ceb0aa121149.jpg" alt="Interruptor">
+                <p>Interruptor</p>
+                <p class="price">R$ 25,00</p>
+                <a href="detalhes.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+            <div class="product-card" data-category="ferramenta">
+                <img src="imagem adicionais/d6702e82-1c63-4ba1-92ea-5281d483dd4f.jpg" alt="Interruptor">
+                <p>Boia de água</p>
+                <p class="price">R$ 5,00</p>
+                <a href="detalhes.html" class="btn">Ver Detalhes</a>
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+            </div>
+            <!-- Adicione data-category para os outros produtos também -->
+        </div>
+    </main>
+<!-- Seção de Ofertas Especiais -->
+  <section class="ofertas-especiais"> 
+    <div class="container"> 
+        <h2>Ofertas Especiais</h2> 
+    <div class="offer-list">
+    <div class="offer-item"> 
+        <img src="a1.jpg" alt="Oferta 1"> 
+        <h3>Desconto em Tintas</h3>
+        <p>Obtenha 20% de desconto em todas as tintas.</p>
+        <a href="ofertas.html" class="btn">Saiba Mais</a>
+    </div> 
+    <div class="offer-item">
+         <img src="a2.jpg" alt="Oferta 2">
+          <h3>Promoção de Ferramentas</h3> 
+          <p>Compre 2 ferramentas e ganhe 1 grátis.</p>
+         <a href="ofertas.html" class="btn">Saiba Mais</a>
+         </div> 
+         <div class="offer-item">
+             <img src="a3.png" alt="Oferta 3">
+              <h3>Frete Grátis</h3>
+               <p>Frete grátis em compras acima de R$200.</p>
+                <a href="ofertas.html" class="btn">Saiba Mais</a> 
+            </div>
+         </div>
+         </div>
+      </section>
+      
+    <!-- Rodapé do site -->
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>&copy; 2024 GSE Soluções. Todos os direitos reservados.</p>
+                <ul>
+                    <li><a href="politicaprivacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos de uso.html">Termos de Uso</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="construcao.js" defer></script>
+</body>
+</html>

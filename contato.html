@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a GSE SOLUÇÕES para suporte e informações.">
+  <meta name="keywords" content="GSE SOLUÇÕES, contato, suporte, ajuda">
+  <meta name="author" content="GSE SOLUÇÕES">
+  <title>Contato - GSE SOLUÇÕES</title>
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="contato.css">
+  <!-- Link para fontes do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Link para ícones do FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Link para o arquivo JavaScript externo -->
+  <script src="construcao.js"></script>
+  <!-- Link para a biblioteca jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+  <header>
+      <div class="container">
+          <h1 class="logo">
+              <a href="paginainicial.html">
+                  <img src="imagem logo/b77e52a4-fa70-42aa-bbb6-42454f88236d.jpg" alt="Logo">
+              </a>
+          </h1>
+          <nav>
+              <ul>
+                  <li><a href="paginainicial.html">Home</a></li>
+                  <li><a href="produtos.html">Produtos</a></li>
+                  <li><a href="orcamento.html">Orçamento</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                  <li><a href="carrinho.html">Carrinho</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+  <section class="contato">
+    <div class="container">
+      <h2>Entre em Contato Conosco</h2>
+      <p>Tem alguma dúvida ou precisa de ajuda? Preencha o formulário abaixo ou entre em contato pelos nossos canais.</p>
+
+      <div class="informacoes-contato">
+        <h3>Informações de Contato</h3>
+        <ul>
+          <li><i class="fas fa-phone"></i> <strong>Telefone:</strong> (61) ---------</li>
+          <!-- Link para WhatsApp -->
+          <a href="https://wa.me/5561XXXXXXXXX" target="_blank" class="whatsapp-float" aria-label="Entre em contato pelo WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <li><i class="fas fa-envelope"></i> <strong>E-mail:</strong> <a href="mailto:email@gsesolucoes.com">email@gsesolucoes.com</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> GAMA</li>
+        </ul>
+        <!-- Links para redes sociais -->
+        <div class="redes-sociais">
+          <a href="https://instagram.com/seuusuario" target="_blank" class="instagram-float" aria-label="Visite nossa página no Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/5561XXXXXXXXX" target="_blank" class="whatsapp-float" aria-label="Enviar mensagem via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://t.me/seuusuario" target="_blank" class="telegram-float" aria-label="Enviar mensagem via Telegram">
+            <i class="fab fa-telegram"></i>
+          </a>
+        </div>
+        
+        <div class="horarios-atendimento">
+          <h3>Horários de Atendimento</h3>
+          <p>Segunda a Sexta: 8h - 18h</p>
+          <p>Sábados: 9h - 13h</p>
+          <p>Domingos e feriados: Fechado</p>
+        </div>
+        <button class="botao" id="agendar-ligacao">Agendar Ligação</button>
+      </div>
+
+      <div class="form-contato">
+        <h3>Formulário de Contato</h3>
+        <form action="enviar_contato.php" method="POST">
+          <div class="campo">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+          </div>
+          <!-- Mensagem de sucesso ao enviar o formulário -->
+          <div id="mensagem-sucesso" style="display: none; color: green; text-align: center; margin-top: 20px;">
+            Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.
+          </div>
+          
+          <button type="submit" class="botao">Enviar Mensagem</button>
+        </form>
+      </div>
+
+      <div class="mapa">
+        <h3>Onde nos Encontrar</h3>
+        <!-- Embed do Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14635.742215130822!2d-46.645847!3d-23.565681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e6a1ccad3d5%3A0x826e4abac17f2d3a!2sRua%20da%20Constru%C3%A7%C3%A3o%2C%20123%20-%20Centro%2C%20S%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1662414730226!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <button id="localizar" class="botao">Usar Minha Localização</button>
+      </div>
+    </div>
+  </section>
+  <!-- Google reCAPTCHA -->
+  <div class="g-recaptcha" data-sitekey="SEU_SITE_KEY"></div>
+  <button id="voltar-topo" class="voltar-topo">↑ Topo</button>
+
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <p>&copy; 2024 GSE SOLUÇÕES. Todos os direitos reservados.</p>
+        <ul>
+          <li><a href="politicaprivacidade.html" aria-label="Política de Privacidade">Política de Privacidade</a></li>
+          <li><a href="termos de uso.html" aria-label="Termos de Uso">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Link para o arquivo JavaScript externo -->
+  <script src="construcao.js"></script>
+</body>
+
+</html>
+

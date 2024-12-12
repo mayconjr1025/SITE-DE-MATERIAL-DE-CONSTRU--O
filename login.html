@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sua Loja</title>
+    <link rel="stylesheet" href="login.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body>
+
+    <!-- Container do Login -->
+    <div class="login-container">
+        <h2>Login</h2>
+        
+        <!-- Formulário de Login -->
+        <form action="login-processar.php" method="POST" class="login-form">
+            <!-- Grupo de Input para E-mail -->
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+            </div>
+            
+            <!-- Grupo de Input para Senha -->
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+            </div>
+            
+            <!-- Link para Esqueci Senha -->
+            <p><a href="esqueci-senha.html">Esqueceu sua senha?</a></p>
+            
+            <!-- Botão de Login -->
+            <button type="submit" class="btn-login">Entrar</button>
+        </form>
+        
+        <!-- Link para Cadastro -->
+        <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        
+        <!-- Login Social -->
+        <div class="login-social">
+            <p>Ou faça login com:</p>
+            
+            <!-- Botão de Login com Google -->
+            <a href="#" onclick="handleGoogleSignIn();" class="btn-social btn-google">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="social-icon"> Login com Google
+            </a>
+            
+            <!-- Botão de Login com Facebook -->
+            <a href="https://your-facebook-login-url" class="btn-social btn-facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon"> Login com Facebook
+            </a>
+        </div>
+        
+        <!-- Links para Termos de Uso e Política de Privacidade -->
+        <div class="legal-links">
+            <p><a href="termos de uso.html">Termos de Uso</a> | <a href="politicaprivacidade.html">Política de Privacidade</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos gerais do corpo */
+  body {
+    font-family: 'Arial', sans-serif; /* Fonte principal */
+     background-color: #e3e6e9; 
+    color: #333; /* Cor do texto */
+    display: flex; /* Flexbox para centralizar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da tela */
+  }
+  
+  /* Container do Login */
+  .login-container {
+    background: white; /* Cor de fundo branca */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center; /* Texto centralizado */
+    animation: fadeIn 1s ease; /* Animação de fade-in */
+  }
+  
+  .login-container h2 {
+    margin-bottom: 20px; /* Margem inferior */
+    color: #333; /* Cor do título */
+  }
+  
+  /* Formulário de Login */
+  .login-form {
+    display: flex; /* Flexbox para layout flexível */
+    flex-direction: column; /* Direção dos itens em coluna */
+  }
+  
+  .input-group {
+    margin-bottom: 15px; /* Margem inferior */
+    text-align: left; /* Texto alinhado à esquerda */
+  }
+  
+  .input-group label {
+    display: block; /* Exibir como bloco */
+    margin-bottom: 5px; /* Margem inferior */
+    color: #333; /* Cor do texto */
+  }
+  
+  .input-group input {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+  }
+  
+  .input-group input:focus {
+    background-color: #004f9e; /* Azul-escuro */
+
+    outline: none; /* Remove outline padrão */
+  }
+  
+  .btn-login {
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #004f9e; /* Azul-escuro */
+
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+  }
+  
+  .btn-login:hover {
+    background-color: #004f9e; /* Azul-escuro */
+
+    transform: scale(1.05); /* Escala ao passar o mouse */
+  }
+  
+  .login-social {
+    margin-top: 20px; /* Margem superior */
+  }
+  
+  .login-social p {
+    margin-bottom: 10px; /* Margem inferior */
+  }
+  
+  .btn-social {
+    display: flex; /* Flexbox para layout flexível */
+    align-items: center; /* Alinhamento dos itens no centro vertical */
+    justify-content: center; /* Centraliza itens */
+    padding: 10px; /* Espaçamento interno */
+    margin: 5px 0; /* Margem superior e inferior */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 1rem; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+  }
+  
+  .btn-google {
+    background-color: #db4437; /* Cor de fundo Google */
+  }
+  
+  .btn-facebook {
+    background-color: #004f9e; /* Azul-escuro */
+
+  }
+  
+  .social-icon {
+    width: 20px; /* Largura do ícone */
+    margin-right: 10px; /* Margem à direita */
+  }
+  
+  .legal-links {
+    margin-top: 20px; /* Margem superior */
+  }
+  
+  .legal-links a {
+    color: black; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+  }
+  
+  .legal-links a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  

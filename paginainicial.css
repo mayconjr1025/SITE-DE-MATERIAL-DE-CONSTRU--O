@@ -1,0 +1,438 @@
+
+  /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  color: black; /* Corrigido para incluir a cor */
+  text-align: center;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+/* Controles do slider */
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.controls label {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Slider */
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider-images {
+  display: flex;
+  animation: scroll 45s linear infinite;
+  width: max-content;
+}
+
+.slider-images img {
+  width: auto;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Header */
+header {
+  background-color: #004f9e;
+  padding: 15px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #0264d6;
+  border-radius: 5px;
+}
+
+/* Título da página */
+main h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2.5em;
+  color: #004f9e;
+}
+
+/* Sessão sobre */
+.sobre {
+  background-color: #eef3f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.sobre .botao {
+  background-color: #004f9e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.sobre .botao:hover {
+  background-color: #0264d6;
+}
+
+/* Footer */
+footer {
+  background-color: #004f9e;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .footer-info {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer ul li a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #d1e8ff;
+}
+
+/* Botões flutuantes */
+.chat-suporte,
+.whatsapp-float,
+.telegram-float,
+.instagram-float,
+.linkedin-float {
+  position: fixed;
+  color: white;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.whatsapp-float {
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+}
+
+.telegram-float {
+  bottom: 90px;
+  right: 20px;
+  background-color: #0088cc;
+}
+
+.instagram-float {
+  bottom: 160px;
+  right: 20px;
+  background-color: #E1306C;
+}
+
+.linkedin-float {
+  bottom: 280px;
+  right: 20px;
+  background-color: #0077b5;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe57;
+}
+
+.telegram-float:hover {
+  background-color: #006fa3;
+}
+
+.instagram-float:hover {
+  background-color: #C13584;
+}
+
+.linkedin-float:hover {
+  background-color: #005d8e;
+}
+
+/* Estilo dos produtos */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px; /* Define uma altura fixa para as imagens */
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.product-card p {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .slider-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Outros estilos */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button:focus, .botao:focus {
+  outline: 2px solid #0264d6;
+}
+
+/* Estilos da barra de busca */
+.form-busca {
+  margin-bottom: 20px;
+}
+
+.form-busca input[type="text"] {
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  width: 320px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form-busca input[type="text"]:focus {
+  border-color: #0264d6;
+  box-shadow: 0 0 10px #0264d6;
+  outline: none;
+}
+
+.form-busca button {
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #0264d6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-busca button:hover {
+  background-color: #025bb5;
+  transform: scale(1.1);
+}
+
+/* Estilos das ações do usuário */
+.user-actions {
+  margin-top: 20px;
+}
+
+.user-actions a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #0264d6;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.user-actions a:hover {
+  color: #e68900;
+}
+/* Seção de Serviços */
+.servicos {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.servicos .container {
+  text-align: center;
+}
+
+.servicos h2 {
+  font-size: 2.5em;
+  color: #004f9e;
+  margin-bottom: 30px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-item i {
+  font-size: 3em;
+  color: #004f9e;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1em;
+  color: #666;
+}

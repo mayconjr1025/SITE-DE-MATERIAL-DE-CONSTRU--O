@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento - GSE SOLUÇÕES</title>
+  <link rel="stylesheet" href="orcamento.css">
+  <script src="construcao.js" defer></script>
+</head>
+<!-- Cabeçalho do site -->
+<body>
+  <header>
+      <div class="container">
+          <h1 class="logo">
+              <a href="paginainicial.html">
+                  <img src="imagem logo/b77e52a4-fa70-42aa-bbb6-42454f88236d.jpg" alt="Logo">
+              </a>
+          </h1>
+          <!-- Navegação -->
+          <nav>
+              <ul>
+                  <li><a href="paginainicial.html">Home</a></li>
+                  <li><a href="produtos.html">Produtos</a></li>
+                  <li><a href="orcamento.html">Orçamento</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                  <li><a href="carrinho.html">Carrinho</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+  <!-- Seção de Orçamento -->
+  <section class="orcamento">
+    <div class="container">
+      <h2>Solicite seu Orçamento</h2>
+      <p>Preencha o formulário abaixo com os itens que você deseja comprar e nossa equipe entrará em contato com o orçamento personalizado.</p>
+<!-- Formulário de orçamento -->
+      <form action="enviar_orcamento.php" method="POST" class="form-orcamento">
+        <h3>Produtos Selecionados</h3>
+        <div class="produto">
+          <label for="produto">Selecione um Produto:</label>
+          <select id="produto" name="produto[]" aria-label="Selecione um produto" aria-required="true">
+          
+            <option value="" disabled selected>Escolha um produto...</option>
+            <option value="Trena">Trena</option>
+            <option value="Assento Sanitário">Assento Sanitário</option>
+            <option value="Tinta de Revestimento">Tinta de Revestimento</option>
+          </select>
+          <label for="quantidade">Quantidade:</label>
+          <input type="number" id="quantidade" name="quantidade[]" min="1" required>
+        </div>
+        <label for="parcelas">Número de Parcelas:</label>
+<select id="parcelas">
+    <option value="1">1x</option>
+    <option value="2">2x</option>
+    <option value="3">3x</option>
+    <option value="4">4x</option>
+    <option value="5">5x</option>
+    <option value="6">6x</option>
+</select>
+
+<p id="parcelamento">Valor da Parcela: R$0,00</p>
+
+
+        <button type="button" id="add-produto" class="botao">+ Adicionar Produto</button>
+
+        <h3>Informações de Contato</h3>
+<!-- Campo para nome completo -->
+        <div class="campo">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+<!-- Campo para e-mail -->
+        <div class="campo">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        </div>
+<!-- Campo para telefone -->
+        <div class="campo">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" required>
+        </div>
+<!-- Campo para endereço de entrega -->
+        <div class="campo">
+          <label for="endereco">Endereço de Entrega:</label>
+          <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+          <button type="button" id="ver-mapa" class="botao">Ver no Mapa</button>
+        </div>
+
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14635.742215130822!2d-46.645847!3d-23.565681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e6a1ccad3d5%3A0x826e4abac17f2d3a!2sRua%20da%20Constru%C3%A7%C3%A3o%2C%20123%20-%20Centro%2C%20S%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1662414730226!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<!-- Campo para mensagem opcional -->
+        <div class="campo">
+          <label for="mensagem">Mensagem (opcional):</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Deixe sua mensagem aqui..."></textarea>
+        </div>
+<!-- Campo para anexar arquivo -->
+        <div class="campo">
+          <label for="arquivo">Anexar Arquivo:</label>
+          <input type="file" id="arquivo" name="arquivo" accept=".jpg, .jpeg, .png, .pdf">
+        </div>
+<!-- Botões de ação -->
+        <button type="reset" class="botao limpar">Limpar Formulário</button>
+        <button type="submit" class="botao">Solicitar Orçamento</button>
+        <button type="button" class="botao compartilhar" id="compartilhar">Compartilhar Orçamento</button>
+        <a href="https://wa.me/?text=Ol%C3%A1,%20quero%20compartilhar%20meu%20or%C3%A7amento%20com%20voc%C3%AA" target="_blank">
+          <button type="button" class="botao compartilhar">Compartilhar no WhatsApp</button>
+        </a>
+        
+      </form>
+    </div>
+    
+  </section>
+
+  <div class="faq">
+    <h3>Perguntas Frequentes</h3>
+    <details>
+      <summary>Como funciona o envio do orçamento?</summary>
+      <p>Após o envio, nossa equipe analisará sua solicitação e entrará em contato.</p>
+    </details>
+    <details>
+      <summary>Quanto tempo demora para receber uma resposta?</summary>
+      <p>Nosso prazo médio é de 1 a 2 dias úteis.</p>
+    </details>
+  </div>
+<!-- Rodapé do site -->
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <p>&copy; 2024 GSE soluções. Todos os direitos reservados.</p>
+        <ul>
+          <li><a href="politicaprivacidade.html">Política de Privacidade</a></li>
+          <li><a href="termos de uso.html">Termos de Uso </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="construcao.js" defer></script>
+</body>
+</html>

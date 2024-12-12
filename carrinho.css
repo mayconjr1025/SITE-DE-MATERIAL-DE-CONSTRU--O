@@ -1,0 +1,383 @@
+/* Reset básico para garantir uma base consistente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+  font-family: 'Arial', sans-serif; /* Fonte principal */
+  background-color: #f9f9f9; /* Cor de fundo */
+  color: #333; /* Cor do texto */
+  line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+/* Links */
+a {
+  text-decoration: none; /* Remove sublinhado de links */
+  color: inherit; /* Herdar a cor do elemento pai */
+}
+
+/* Listas não ordenadas */
+ul {
+  list-style: none; /* Remove marcadores de listas */
+}
+
+/* Header (cabeçalho) */
+header {
+  background-color: #004f9e; /* Cor de fundo azul-escuro */
+  padding: 15px 0; /* Espaçamento interno */
+}
+
+header .container {
+  display: flex; /* Flexbox para layout flexível */
+  justify-content: space-between; /* Espaço entre itens do container */
+  align-items: center; /* Alinhamento dos itens no centro vertical */
+}
+
+header .logo img {
+  width: 150px; /* Largura da logo */
+}
+
+header nav ul {
+  display: flex; /* Flexbox para menu de navegação */
+  gap: 15px; /* Espaçamento entre itens do menu */
+}
+
+header nav ul li a {
+  color: #fff; /* Cor dos links do menu */
+  font-weight: bold; /* Negrito */
+  padding: 5px 10px; /* Espaçamento interno */
+  transition: background-color 0.3s ease; /* Transição suave para hover */
+}
+
+header nav ul li a:hover {
+  background-color: #0264d6; /* Cor de fundo ao passar o mouse */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Título da página principal */
+main h1 {
+  text-align: center; /* Centraliza o título */
+  margin: 30px 0; /* Margem superior e inferior */
+  font-size: 2.5em; /* Tamanho da fonte */
+  color: #004f9e; /* Cor do título */
+}
+
+/* Tabela do carrinho de compras */
+table {
+  width: 100%; /* Largura total */
+  border-collapse: collapse; /* Colapsa bordas */
+  margin: 20px 0; /* Margem superior e inferior */
+}
+
+thead th {
+  background-color: #004f9e; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  text-align: left; /* Alinhamento do texto */
+  padding: 10px; /* Espaçamento interno */
+}
+
+tbody td, tfoot td {
+  border: 1px solid #ddd; /* Borda das células */
+  padding: 10px; /* Espaçamento interno */
+}
+
+tfoot td {
+  font-weight: bold; /* Negrito */
+}
+
+.quantidade {
+  display: flex; /* Flexbox para layout flexível */
+  align-items: center; /* Alinhamento dos itens no centro vertical */
+  gap: 5px; /* Espaçamento entre itens */
+}
+
+.quantidade button {
+  width: 30px; /* Largura do botão */
+  height: 30px; /* Altura do botão */
+  background-color: #004f9e; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove borda */
+  cursor: pointer; /* Cursor de ponteiro */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+.quantidade input {
+  width: 50px; /* Largura do input */
+  text-align: center; /* Texto centralizado */
+}
+
+.remover {
+  background-color: #ff0000; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove borda */
+  padding: 5px 10px; /* Espaçamento interno */
+  cursor: pointer; /* Cursor de ponteiro */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.remover:hover {
+  background-color: #cc0000; /* Cor de fundo ao passar o mouse */
+}
+
+/* Botões de ação */
+.botoes {
+  display: flex; /* Flexbox para layout flexível */
+  justify-content: space-between; /* Espaço entre itens */
+  margin-top: 20px; /* Margem superior */
+}
+
+.botoes button {
+  padding: 10px 20px; /* Espaçamento interno */
+  background-color: #004f9e; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+.botoes button:hover {
+  background-color: #00336d; /* Cor de fundo ao passar o mouse */
+}
+
+.botoes a {
+  text-decoration: none; /* Remove sublinhado */
+  color: white; /* Cor do texto */
+}
+
+/* Rodapé */
+footer {
+  background-color: #004f9e; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 20px 0; /* Espaçamento interno */
+  text-align: center; /* Texto centralizado */
+}
+
+footer ul {
+  list-style: none; /* Remove marcadores de lista */
+  padding: 0; /* Remove preenchimento */
+}
+
+footer ul li {
+  display: inline; /* Exibir como inline */
+  margin: 0 10px; /* Margem entre itens */
+}
+
+footer ul li a {
+  color: white; /* Cor dos links */
+  text-decoration: none; /* Remove sublinhado */
+}
+
+/* Responsividade para carrinho */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block; /* Exibir como bloco */
+  }
+
+  th, td {
+    padding: 10px; /* Espaçamento interno */
+    text-align: left; /* Alinhamento do texto */
+  }
+
+  tr {
+    margin-bottom: 15px; /* Margem inferior */
+    border-bottom: 1px solid #ddd; /* Borda inferior */
+  }
+
+  .quantidade {
+    flex-direction: column; /* Direção dos itens em coluna */
+    gap: 10px; /* Espaçamento entre itens */
+  }
+
+  .botoes {
+    flex-direction: column; /* Direção dos itens em coluna */
+    align-items: stretch; /* Esticar itens */
+  }
+}
+
+/* Efeitos de transição para botões */
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+}
+
+button:hover {
+  background-color: #00336d; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Escala ao passar o mouse */
+}
+
+/* Estilo para a seção carrinho */
+.carrinho {
+  font-family: 'Roboto', sans-serif; /* Fonte do Google Fonts */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.carrinho table {
+  width: 100%; /* Largura total */
+  border-collapse: collapse; /* Colapsa bordas */
+}
+
+.carrinho th, .carrinho td {
+  border: 1px solid #ddd; /* Borda das células */
+  padding: 10px; /* Espaçamento interno */
+  text-align: center; /* Texto centralizado */
+}
+
+.carrinho th {
+  background-color: #007bff; /* Cor de fundo */
+  color: white; /* Cor do texto */
+}
+
+.carrinho .quantidade button {
+  background-color: #007bff; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove borda */
+  padding: 5px 10px; /* Espaçamento interno */
+  cursor: pointer; /* Cursor de ponteiro */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.carrinho .quantidade button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.carrinho .remover {
+  background-color: #dc3545; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove borda */
+  padding: 5px 10px; /* Espaçamento interno */
+  cursor: pointer; /* Cursor de ponteiro */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.carrinho .remover:hover {
+  background-color: #c82333; /* Cor de fundo ao passar o mouse */
+}
+
+.carrinho .cupom, .calculo-frete, .botoes {
+  margin-top: 20px; /* Margem superior */
+}
+
+.carrinho .cupom input, .calculo-frete input {
+  width: 200px; /* Largura do input */
+  padding: 5px; /* Espaçamento
+  .carrinho .cupom button, .calculo-frete button, .botoes button {
+  background-color: #28a745; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  cursor: pointer; /* Cursor de ponteiro */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-align: center; /* Texto centralizado */
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-block; /* Exibir como inline-block */
+}
+
+.carrinho .cupom button:hover, .calculo-frete button:hover, .botoes button:hover {
+  background-color: #218838; /* Cor de fundo ao passar o mouse */
+}
+
+.botoes .continuar-comprando {
+  background-color: #17a2b8; /* Cor de fundo */
+}
+
+.botoes .continuar-comprando:hover {
+  background-color: #138496; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para a seção Informações do Cliente */
+.informacoes-cliente {
+  background-color: #ffffff; /* Cor de fundo branca */
+  padding: 30px; /* Espaçamento interno */
+  margin-top: 20px; /* Margem superior */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.informacoes-cliente h3 {
+  color: #004f9e; /* Cor do título */
+  font-size: 1.8em; /* Tamanho da fonte */
+  margin-bottom: 20px; /* Margem inferior */
+  text-align: center; /* Texto centralizado */
+}
+
+.informacoes-cliente .campo {
+  margin-bottom: 20px; /* Margem inferior para os campos */
+}
+
+.informacoes-cliente label {
+  display: block; /* Exibe como bloco */
+  font-size: 1.1em; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+  margin-bottom: 5px; /* Margem inferior */
+}
+
+.informacoes-cliente input {
+  width: 100%; /* Largura total */
+  padding: 12px; /* Espaçamento interno */
+  font-size: 1em; /* Tamanho da fonte */
+  border: 1px solid #ddd; /* Borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  transition: border-color 0.3s; /* Transição suave da cor da borda */
+}
+
+.informacoes-cliente input:focus {
+  border-color: #004f9e; /* Cor da borda ao focar */
+  outline: none; /* Remove outline padrão */
+}
+
+/* Estilo responsivo para dispositivos menores */
+@media (max-width: 768px) {
+  .informacoes-cliente {
+    padding: 20px; /* Reduz o espaçamento interno */
+  }
+
+  .informacoes-cliente h3 {
+    font-size: 1.5em; /* Reduz o tamanho da fonte */
+  }
+}
+
+/* Estilo para a seção Opções de Pagamento */
+.opcoes-pagamento {
+  background-color: #ffffff; /* Cor de fundo branca */
+  padding: 30px; /* Espaçamento interno */
+  margin-top: 20px; /* Margem superior */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.opcoes-pagamento h3 {
+  color: #004f9e; /* Cor do título */
+  font-size: 1.8em; /* Tamanho da fonte */
+  margin-bottom: 20px; /* Margem inferior */
+  text-align: center; /* Texto centralizado */
+}
+
+.opcoes-pagamento .campo {
+  margin-bottom: 20px; /* Margem inferior para os campos */
+}
+
+.opcoes-pagamento input[type="radio"] {
+  margin-right: 10px; /* Espaço à direita do botão de rádio */
+}
+
+.opcoes-pagamento label {
+  font-size: 1.1em; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+}
+
+.opcoes-pagamento form {
+  display: flex; /* Flexbox para layout flexível */
+  flex-direction: column; /* Direção dos itens em coluna */
+  align-items: flex-start; /* Alinha os itens no início */
+}
+
+.opcoes-pagamento .campo {
+  display: flex; /* Flexbox para layout flexível */
+  align-items: center; /* Alinha os itens no centro vertical */
+}

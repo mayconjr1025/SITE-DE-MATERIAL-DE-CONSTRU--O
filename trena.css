@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #004f9e;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  header .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.product-info {
+    display: flex;
+    width: 70%;
+}
+
+.product-images {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-images img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.other-images img {
+    width: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.product-description {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-description h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.product-description .price {
+    font-size: 22px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.product-description .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-description .features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-description .features li {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.reviews {
+    width: 25%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review .reviewer {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review .review-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.review .review-rating {
+    color: #f39c12;
+}
+
+footer {
+    background-color: #004f9e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+  }

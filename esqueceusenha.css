@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos gerais do corpo */
+  body {
+    font-family: 'Arial', sans-serif; /* Fonte principal */
+    background-color: #dce4ec; 
+    color: #333; /* Cor do texto */
+    display: flex; /* Flexbox para centralizar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da tela */
+  }
+  
+  /* Container de Esqueceu a Senha */
+  .forgot-password-container {
+    background: white; /* Cor de fundo branca */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center; /* Texto centralizado */
+    animation: fadeIn 1s ease; /* Animação de fade-in */
+  }
+  
+  .forgot-password-container h2 {
+    margin-bottom: 20px; /* Margem inferior */
+    color: #333; /* Cor do título */
+  }
+  
+  .forgot-password-container p {
+    margin-bottom: 20px; /* Margem inferior */
+    color: #666; /* Cor do texto */
+  }
+  
+  /* Formulário de Esqueceu a Senha */
+  .forgot-password-form {
+    display: flex; /* Flexbox para layout flexível */
+    flex-direction: column; /* Direção dos itens em coluna */
+  }
+  
+  .input-group {
+    margin-bottom: 15px; /* Margem inferior */
+    text-align: left; /* Texto alinhado à esquerda */
+  }
+  
+  .input-group label {
+    display: block; /* Exibir como bloco */
+    margin-bottom: 5px; /* Margem inferior */
+    color: #333; /* Cor do texto */
+  }
+  
+  .input-group input {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+  }
+  
+  .input-group input:focus {
+    background-color: #edeef0; /* Cor da borda ao focar */
+    outline: none; /* Remove outline padrão */
+  }
+  
+  .btn-submit {
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #004f9e; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+  }
+  
+  .btn-submit:hover {
+    background-color: #004f9e; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Escala ao passar o mouse */
+  }
+  
+  .forgot-password-container a {
+    color: #110401; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+  }
+  
+  .forgot-password-container a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
